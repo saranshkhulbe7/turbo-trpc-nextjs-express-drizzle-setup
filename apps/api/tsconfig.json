@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": ".",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "jsx": "react"
+  }
+}
+
+// the meaning of these options one by one are:
+// 1. extends: specifies a path to another configuration file that should be used as a base.
+// 2. outDir: specifies the output directory for the compiled files.
+// 3. rootDir: specifies the root directory of input files.
+// 4. esModuleInterop: enables compatibility with Babel and other tools that emit ES modules.
+// 5. skipLibCheck: disables type-checking of declaration files.
+// 6. jsx: specifies the JSX factory function that should be used.

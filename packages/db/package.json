@@ -1,0 +1,25 @@
+{
+  "name": "@prodx/db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db:generate": "drizzle-kit generate:mysql",
+    "db:deploy": "ts-node --files .drizzle/migrator.ts",
+    "db:generate:deploy": "pnpm run db:generate && pnpm run db:deploy",
+    "dev": "ts-node --files src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20",
+    "drizzle-kit": "^0.20.14",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.30.4",
+    "mysql2": "^3.9.2"
+  }
+}
